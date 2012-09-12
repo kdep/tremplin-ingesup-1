@@ -1,8 +1,7 @@
 
 #!/bin/bash
 quit=0
-tmpFile=tmp.txt
-touch $tmpFile
+tmpFile=`mktemp`
 
 while [ $quit -eq 0 ]
 do
