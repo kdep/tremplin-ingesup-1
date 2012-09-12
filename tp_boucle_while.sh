@@ -3,7 +3,11 @@
 
 while read entree
 do
-    echo "Saisie : $entree"
+    if [[ "$entree" == "q" ]]
+    then
+        break
+    fi
+        echo "Saisie : $entree"
 done
 
 
